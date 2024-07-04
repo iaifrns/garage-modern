@@ -22,17 +22,17 @@ const Menu = ({ text }: { text: string }) => {
 const TopMenu = () => {
   return (
     <div className="p-4 flex w-full justify-between items-center">
-      <div className="flex items-center w-[300px]">
+      <div className="flex items-center w-[300px] max-md:w-full">
         <img src={images.LOGO} width={"60px"} />
         <p className="text-white text-xl">Garage Moderne Automobile</p>
       </div>
-      <div className="flex w-full justify-evenly">
+      <div className="flex w-full justify-evenly max-md:hidden">
         <Menu text="Home" />
         <Menu text="About" />
         <Menu text="Services" />
         <Menu text="Pricing" />
       </div>
-      <button className="p-4 bg-primary font-bold text-white w-[200px]">Contact Us</button>
+      <button className="p-4 bg-primary font-bold text-white w-[200px] max-md:hidden">Contact Us</button>
     </div>
   );
 };
