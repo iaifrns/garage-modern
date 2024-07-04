@@ -20,7 +20,7 @@ const ServiceComponent = ({
     <div
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
-      className={`flex flex-col gap-4 w-[400px] h-[250px] p-4 border ${borderColor} ${bgColor} ${
+      className={`flex flex-col gap-4 w-full h-[250px] p-4 border ${borderColor} ${bgColor} ${
         isHover ? "bg-primary" : ""
       }`}
     >

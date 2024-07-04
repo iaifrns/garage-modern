@@ -4,7 +4,7 @@ import { images } from "../constants/images";
 const ServiceSection = () => {
   return (
     <div className="w-full h-screen">
-      <div className="absolute w-full h-full bg-primary bg-opacity-90">
+      <div className="absolute w-full md:h-screen max-md:h-[2050px] bg-primary bg-opacity-90">
         <div className="w-full h-full flex flex-col p-4 mt-8 mb-8 items-center gap-4">
           <p className="w-full text-center text-2xl text-secondary font-bold">
             Nos Service
@@ -16,7 +16,7 @@ const ServiceSection = () => {
             Ces services sont conçus pour répondre aux besoins variés de nos
             clients et assurer une satisfaction totale.
           </p>
-          <div className="grid grid-cols-3 gap-4 justify-center w-full h-full ">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-4 justify-center w-full h-full max-md:gap-0 ">
             <ServiceComponent
               title="Accessoires de véhicules"
               icon="mdi:car-cog"
@@ -62,7 +62,7 @@ const ServiceSection = () => {
           </div>
         </div>
       </div>
-      <img src={images.SERVICEIMG} className="h-full w-full" />
+      <img src={images.SERVICEIMG} className="h-full w-full max-md:h-[2050px]" />
     </div>
   );
 };
