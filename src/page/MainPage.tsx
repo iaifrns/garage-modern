@@ -1,10 +1,11 @@
 import HeroSection from "../sections/HeroSection";
+import OptionsSection from "../sections/OptionsSection";
 
 const MainPage = () => {
   return (
     <div className="w-full">
       <HeroSection/>
-      <div>different options section</div>
+      <OptionsSection/>
       <div>about section</div>
       <div>our services section</div>
       <div>our plans section</div>
