@@ -1,3 +1,4 @@
+import AboutSection from "../sections/AboutSection";
 import HeroSection from "../sections/HeroSection";
 import OptionsSection from "../sections/OptionsSection";
 
@@ -6,7 +7,7 @@ const MainPage = () => {
     <div className="w-full">
       <HeroSection/>
       <OptionsSection/>
-      <div>about section</div>
+      <AboutSection />
       <div>our services section</div>
       <div>our plans section</div>
       <div>testimonies section</div>

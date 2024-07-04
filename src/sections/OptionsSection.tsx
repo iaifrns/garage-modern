@@ -11,7 +11,7 @@ const Option = ({text, icon} : {text:string, icon:string} ) => {
 
 const OptionsSection = () => {
   return (
-    <div className="p-8 flex w-full justify-evenly bg-secondary">
+    <div className="p-8 flex w-full justify-evenly bg-secondary max-md:hidden">
       <Option text='Soin Complet Auto' icon='bxs:car-mechanic' />
       <Option text='Diagnostic Express' icon='mdi:car-search' />
       <Option text='Service Pièces de Confiance' icon='fa6-brands:sellcast' />
