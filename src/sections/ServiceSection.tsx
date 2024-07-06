@@ -6,10 +6,10 @@ const ServiceSection = () => {
     <div className="w-full h-[120vh] max-md:h-[2050px]">
       <div className="absolute w-full md:h-[120vh] max-md:h-[2050px] bg-primary bg-opacity-90">
         <div className="w-full h-full flex flex-col p-4 mt-8 mb-8 items-center gap-4">
-          <p className="w-full text-center text-2xl text-secondary font-bold">
+          <p className="w-full text-center text-lg text-secondary font-bold max-md:text-start">
             Nos Service
           </p>
-          <p className="text-white text-[32px] font-bold">
+          <p className="text-white text-[32px] font-bold max-md:text-2xl">
             LA MEILLEURE ADRESSE POUR RÉPARER VOTRE VOITURE
           </p>
           <p className="text-white">

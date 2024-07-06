@@ -5,9 +5,9 @@ const AboutSection = () => {
   return (
     <div className="bg-primary p-4">
       <div className="mt-12 mb-12 w-full h-full flex max-md:flex-col max-md:gap-8">
-        <div className="flex flex-col gap-10 w-1/2 max-md:w-full">
-          <p className="text-secondary font-bold text-lg">À Propos</p>
-          <h1 className="text-white text-[40px] font-bold max-md:text-3xl">
+        <div className="flex flex-col gap-10 w-1/2 max-md:w-full max-md:items-center">
+          <p className="text-secondary font-bold text-lg max-md:w-full">À Propos</p>
+          <h1 className="text-white text-[40px] font-bold max-md:text-2xl">
             LA MEILLEURE ADRESSE POUR RÉPARER VOTRE VOITURE
           </h1>
           <p className="text-white">

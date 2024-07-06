@@ -3,6 +3,7 @@ import HeroSection from "../sections/HeroSection";
 import OptionsSection from "../sections/OptionsSection";
 import OurPlanSection from "../sections/OurPlanSection";
 import ServiceSection from "../sections/ServiceSection";
+import TestimonySection from "../sections/TestimonySection";
 
 const MainPage = () => {
   return (
@@ -12,7 +13,7 @@ const MainPage = () => {
       <AboutSection />
       <ServiceSection />
       <OurPlanSection />
-      <div>testimonies section</div>
+      <TestimonySection />
       <div>footer section</div>
     </div>
   );
