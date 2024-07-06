@@ -16,7 +16,7 @@ const HeroSection = () => {
   return (
     <div className="h-screen w-full">
       <div className="absolute h-full w-full">
-        <div className="flex flex-col h-full w-full p-2 bg-black bg-opacity-25 max-md:bg-opacity-50">
+        <div className="flex flex-col h-full w-full p-2 bg-primary bg-opacity-20 max-md:bg-opacity-50">
           <TopMenu />
           <div className="h-full w-full flex flex-col gap-4 justify-center items-center  max-md:gap-8 p-4">
             <p className="text-secondary w-full font-semibold text-xl max-md:text-sm  max-md:text-center">

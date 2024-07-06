@@ -46,7 +46,7 @@ const AboutSection = () => {
           </div>
           <div className="md:absolute mt-[400px] ml-[280px] w-[350px] max-md:mt-0 max-md:ml-0 max-md:w-full">
             <div className="flex p-4 border border-secondary flex-col bg-primary gap-4">
-              <p className="text-white text-justify font-mono">
+              <p className="text-white md:text-justify max-md:text-center font-mono">
                 "Chez garage moderne automobile, nous nous engageons à assurer
                 votre satisfaction à chaque visite. Nous visons à devenir votre
                 partenaire de confiance."
