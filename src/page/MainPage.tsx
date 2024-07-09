@@ -17,7 +17,6 @@ const MainPage = () => {
       <TestimonySection />
       <ArticleSection />
       <div>footer section</div>
-      <div>footer section</div>
     </div>
   );
 };

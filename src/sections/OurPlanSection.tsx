@@ -2,7 +2,7 @@ import { images } from "../constants/images";
 
 const OurPlanSection = () => {
   return (
-    <div className="bg-primary p-4 pt-8 pb-8 flex max-md:flex-col max-md:h-[170vh] justify-between gap-4 items-center">
+    <div className="bg-primary p-8 pt-8 pb-8 flex max-md:flex-col max-md:h-[170vh] justify-between gap-4 items-center">
       <div className="w-1/2 max-md:w-full flex flex-col gap-8 max-md:items-center">
         <p className="font-bold text-secondary text-lg max-md:w-full">
           Pourquoi Nous Choisir
