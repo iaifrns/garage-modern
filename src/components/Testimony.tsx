@@ -7,7 +7,7 @@ interface TestimonailType {
 const Testimony: React.FC<TestimonailType> = ({ testimony }) => {
   return (
     <div className="relative h-[300px]">
-      <div className="absolute w-full h-full">
+      <div className="absolute w-full h-full max-md:block">
         <div className="w-full flex flex-col justify-end items-center gap-4 h-full">
           <img
             src={testimony.image}
@@ -17,7 +17,7 @@ const Testimony: React.FC<TestimonailType> = ({ testimony }) => {
           <p className="text-secondary font-bold">{testimony.title}</p>
         </div>
       </div>
-      <div className="w-[340px] bg-white p-3 h-[180px]">
+      <div className="w-[340px] max-md:w-full bg-white p-3 h-[180px]">
         <p className="font-bold text-sm text-center">
           {'" '}
           {testimony.message}
