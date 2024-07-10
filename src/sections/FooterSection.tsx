@@ -5,7 +5,7 @@ const FooterSection = () => {
   return (
     <div className="relative w-full">
       <div className="absolute h-full bg-primary w-full bg-opacity-80">
-        <div className="flex flex-col p-8 gap-4 items-center justify-center">
+        <div className="flex flex-col p-8 gap-4 items-center justify-center h-full">
           <div className="flex flex-col items-center border-b-2 pb-8">
             <img alt="logo" src={images.LOGO} className="w-[200px]" />
             <p className="text-white text-center md:w-3/5 max-md:text-justify">
@@ -34,7 +34,7 @@ const FooterSection = () => {
           </p>
         </div>
       </div>
-      <img src={images.IMAGE1} className="w-full md:h-[70vh] max-md:h-[100vh]" />
+      <img src={images.IMAGE1} className="w-full md:h-[85vh] max-md:h-[100vh]" />
     </div>
   );
 };
