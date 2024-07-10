@@ -27,12 +27,12 @@ const TopMenu = () => {
         <p className="text-white text-xl">Garage Moderne Automobile</p>
       </div>
       <div className="flex w-full justify-evenly max-md:hidden">
-        <Menu text="Home" />
-        <Menu text="About" />
+        <Menu text="Accueil" />
+        <Menu text="À propos" />
         <Menu text="Services" />
-        <Menu text="Pricing" />
+        <Menu text="Tarification" />
       </div>
-      <button className="p-4 bg-primary font-bold text-white w-[200px] max-md:hidden">Contact Us</button>
+      <button className="p-4 bg-primary font-bold text-white w-[200px] max-md:hidden">Nous Contacter</button>
     </div>
   );
 };

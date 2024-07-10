@@ -6,14 +6,19 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 interface PriceItemType {
   style: string;
   price: PricesType;
+  handleHover?: () => void;
 }
 
-const Price: React.FC<PriceItemType> = ({ style, price }) => {
+const Price: React.FC<PriceItemType> = ({ style, price, handleHover }) => {
   return (
     <div
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHover}
       className={`${style} md:w-[350px] md:h-[600px] border p-8 flex flex-col gap-6 items-center`}
     >
-      <p className="text-secondary font-bold md:text-[38px] max-md:text-[30px]">{price.type}</p>
+      <p className="text-secondary font-bold md:text-[38px] max-md:text-[30px]">
+        {price.type}
+      </p>
       <p className="text-white md:text-[24px] max-md:text-xl">
         <span className="font-bold">{price.price}</span> / {price.duration}
       </p>
