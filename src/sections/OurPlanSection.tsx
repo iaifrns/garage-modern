@@ -30,7 +30,7 @@ const OurPlanSection = () => {
             <p className="text-white font-bold text-4xl">Ans Plus</p>
           </div>
         </div>
-        <img src={images.IMAGE1} className="p-2 w-full" />
+        <img src={images.IMAGE2} className="p-2 w-full" />
         <div className="md:absolute max-md:block w-full h-40 max-md:h-full border border-secondary right-20 max-md:right-0 bottom-0">
           <div className="flex justify-evenly w-full h-full max-md:flex-col">
             <div className="flex flex-col gap-2 w-full h-full justify-center items-center bg-primary">

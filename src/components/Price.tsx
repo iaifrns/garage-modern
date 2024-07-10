@@ -37,7 +37,7 @@ const Price: React.FC<PriceItemType> = ({ style, price }) => {
       </div>
       <Divider />
       <button className="bg-secondary p-2 w-[200px] font-bold underline text-primary">
-        Nos Contacter
+        Nous Contacter
       </button>
     </div>
   );
