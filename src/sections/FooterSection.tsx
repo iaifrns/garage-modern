@@ -30,7 +30,7 @@ const FooterSection = () => {
             </div>
           </div>
           <p className="text-white max-md:text-center">
-            Copyright © 2024. All rights reserved by @willsTech
+            Copyright © 2021. All rights reserved by @willsTech
           </p>
         </div>
       </div>

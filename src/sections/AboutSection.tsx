@@ -1,3 +1,4 @@
+import Numbers from "../components/Numbers";
 import OurVission from "../components/OurVission";
 import { images } from "../constants/images";
 
@@ -6,7 +7,9 @@ const AboutSection = () => {
     <div className="bg-primary p-8">
       <div className="mt-12 mb-12 w-full h-full flex max-md:flex-col max-md:gap-8">
         <div className="flex flex-col gap-10 w-1/2 max-md:w-full max-md:items-center">
-          <p className="text-secondary font-bold text-lg max-md:w-full">À Propos</p>
+          <p className="text-secondary font-bold text-lg max-md:w-full">
+            À Propos
+          </p>
           <h1 className="text-white text-[40px] font-bold max-md:text-2xl">
             LA MEILLEURE ADRESSE POUR RÉPARER VOTRE VOITURE
           </h1>
@@ -32,13 +35,25 @@ const AboutSection = () => {
           <img src={images.ABOUTIMG} className="w-[400px] max-md:w-full" />
           <div className="flex flex-col p-4 gap-4">
             <div className="flex flex-col items-center">
-              <p className="text-white text-[56px] font-extrabold">98%</p>
+              <div className="flex">
+                <Numbers
+                  num={98}
+                  style="text-white text-[56px] font-extrabold"
+                />
+                <p className="text-white text-[56px] font-extrabold">%</p>
+              </div>
               <p className="text-white text-[24px] font-bold">
                 Clients Satisfaits
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <p className="text-white text-[56px] font-extrabold">359+</p>
+              <div className="flex">
+                <Numbers
+                  num={359}
+                  style="text-white text-[56px] font-extrabold"
+                />
+                <p className="text-white text-[56px] font-extrabold">+</p>
+              </div>
               <p className="text-white text-[24px] font-bold">
                 Travail Accompli
               </p>
