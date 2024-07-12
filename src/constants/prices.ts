@@ -10,22 +10,37 @@ export const prices: PricesType[] = [
     {
         type: "Plan Classique",
         price: "100 000 FCFA",
-        duration: "1 mois",
+        duration: "3 mois",
         desc: "Cours de base sur la mécanique automobile",
-        content: []
+        content: [
+            "lubrification et refroidissement",
+            "allumage et carburant",
+            "transmission et embrayage",
+            "freins et pneus"
+        ]
     },
     {
         type: "Plan Avancé",
-        price: "250 000 FCFA",
-        duration: "3 mois",
+        price: "550 000 FCFA",
+        duration: "1 ans",
         desc: " Formation approfondie sur la réparation moteur et électronique",
-        content: []
+        content: [
+            "agent de service clientele",
+            "controleur technique automobile",
+            "depaneur remorqueur",
+            "technicien apres vente"
+        ]
     },
     {
-        type: "Plan Classique",
-        price: "500 000 FCFA",
-        duration: "6 mois",
+        type: "Plan Pro",
+        price: "1 500 000 FCFA",
+        duration: "2 ans",
         desc: "Formation complète incluant diagnostic avancé et gestion",
-        content: []
+        content: [
+            "contoleur technique automobile",
+            "tchnicien apres vente",
+            "mecatronique",
+            "mecanicien automobile et carrossier peintre"
+        ]
     },
 ]
