@@ -1,5 +1,6 @@
 import React from "react";
 import { images } from "../constants/images";
+import { redirectToWhatsapp } from "../helper/redirectToWhatsapp";
 
 interface MenuType {
   text: string;
@@ -30,7 +31,10 @@ const TopMenu = () => {
         <Menu text="Services" href="#services" />
         <Menu text="Tarification" href="#pricing" />
       </div>
-      <button className="p-4 bg-primary font-bold text-white w-[200px] max-md:hidden">
+      <button
+        className="p-4 bg-primary font-bold text-white w-[200px] max-md:hidden"
+        onClick={redirectToWhatsapp}
+      >
         Nous Contacter
       </button>
     </div>

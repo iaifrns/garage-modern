@@ -2,6 +2,7 @@ import React from "react";
 import Divider from "./Divider";
 import { PricesType } from "../constants/prices";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { redirectToWhatsapp } from "../helper/redirectToWhatsapp";
 
 interface PriceItemType {
   style: string;
@@ -36,7 +37,10 @@ const Price: React.FC<PriceItemType> = ({ style, price, handleHover }) => {
 
       <Divider />
       <div className="w-full justify-center flex">
-        <button className="bg-secondary p-2 w-[200px] font-bold underline text-primary">
+        <button
+          className="bg-secondary p-2 w-[200px] font-bold underline text-primary"
+          onClick={redirectToWhatsapp}
+        >
           Nous Contacter
         </button>
       </div>
