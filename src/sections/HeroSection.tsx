@@ -3,18 +3,18 @@ import TopMenu from "../components/TopMenu";
 import { images } from "../constants/images";
 
 const HeroSection = () => {
-    const [isSmallScreen, setIsSmallScreen] = useState(false);
-    const checkScreenSize = () => {
-        setIsSmallScreen(window.matchMedia('(max-width: 768px)').matches);
-    }
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const checkScreenSize = () => {
+    setIsSmallScreen(window.matchMedia("(max-width: 768px)").matches);
+  };
 
-    useEffect( ()=>{
-        checkScreenSize();
-        window.addEventListener('resize', checkScreenSize);
-        return ()=> window.removeEventListener('resize',checkScreenSize)
-    },[]);
+  useEffect(() => {
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
   return (
-    <div className="h-screen w-full">
+    <div className="h-screen w-full" id="home">
       <div className="absolute h-full w-full">
         <div className="flex flex-col h-full w-full p-2 bg-primary bg-opacity-20 max-md:bg-opacity-50">
           <TopMenu />
@@ -34,12 +34,17 @@ const HeroSection = () => {
                 service de qualité supérieure et une satisfaction garantie à
                 chaque visite.
               </p>
-              <button className="p-2 bg-secondary w-[200px] text-primary font-bold">Nos Service</button>
+              <a href="#services" className="flex items-center justify-center p-2 bg-secondary w-[200px] text-primary font-bold">
+                Nos Service
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <img src={isSmallScreen ? images.HEROBG1 : images.HEROBG} className="object-cover h-full w-full" />
+      <img
+        src={isSmallScreen ? images.HEROBG1 : images.HEROBG}
+        className="object-cover h-full w-full"
+      />
     </div>
   );
 };

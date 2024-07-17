@@ -3,7 +3,7 @@ import { images } from "../constants/images";
 
 const ServiceSection = () => {
   return (
-    <div className="w-full h-[120vh] max-md:h-[2050px]">
+    <div className="w-full h-[120vh] max-md:h-[2050px]" id="services">
       <div className="absolute w-full md:h-[120vh] max-md:h-[2050px] bg-primary bg-opacity-90">
         <div className="w-full h-full flex flex-col p-8 mt-8 mb-8 items-center gap-4">
           <p className="w-full text-center text-lg text-secondary font-bold max-md:text-start">

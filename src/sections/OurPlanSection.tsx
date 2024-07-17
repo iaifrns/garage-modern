@@ -20,9 +20,9 @@ const OurPlanSection = () => {
           état, tout en vous offrant des formations de haute qualité pour
           maîtriser l'entretien automobile.
         </p>
-        <button className="p-2 bg-secondary text-primary underline text-lg font-semibold w-48">
+        <a href="#services" className="flex items-center justify-center p-2 bg-secondary text-primary underline text-lg font-semibold w-48">
           Nos Service
-        </button>
+        </a>
       </div>
       <div className="relative w-1/2 h-[550px] max-md:h-full flex flex-col max-md:w-full justify-center items-center max-md:gap-4">
         <div

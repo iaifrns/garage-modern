@@ -1,21 +1,19 @@
-import { useState } from "react";
+import React from "react";
 import { images } from "../constants/images";
 
-const Menu = ({ text }: { text: string }) => {
-  const [isHover, setIsHover] = useState(false);
-  const handleMouseMovement = (value: boolean) => {
-    setIsHover(value);
-  };
+interface MenuType {
+  text: string;
+  href: string;
+}
+
+const Menu: React.FC<MenuType> = ({ text, href }) => {
   return (
-    <p
-      onMouseEnter={() => handleMouseMovement(true)}
-      onMouseLeave={() => handleMouseMovement(false)}
-      className={`text-white text-lg font-semibold cursor-pointer p-2 rounded-sm ${
-        isHover ? "bg-secondary" : ""
-      }`}
+    <a
+      href={href}
+      className={`text-white text-lg font-semibold cursor-pointer p-2 rounded-sm hover:bg-secondary`}
     >
       {text}
-    </p>
+    </a>
   );
 };
 
@@ -27,12 +25,14 @@ const TopMenu = () => {
         <p className="text-white text-xl">Garage Moderne Automobile</p>
       </div>
       <div className="flex w-full justify-evenly max-md:hidden">
-        <Menu text="Accueil" />
-        <Menu text="À propos" />
-        <Menu text="Services" />
-        <Menu text="Tarification" />
+        <Menu text="Accueil" href="#home" />
+        <Menu text="À propos" href="#about" />
+        <Menu text="Services" href="#services" />
+        <Menu text="Tarification" href="#pricing" />
       </div>
-      <button className="p-4 bg-primary font-bold text-white w-[200px] max-md:hidden">Nous Contacter</button>
+      <button className="p-4 bg-primary font-bold text-white w-[200px] max-md:hidden">
+        Nous Contacter
+      </button>
     </div>
   );
 };

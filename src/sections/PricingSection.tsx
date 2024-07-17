@@ -8,7 +8,7 @@ const PricingSection = () => {
   const handleHover1 = () => setIsHover1(!isHover1);
   const handleHover2 = () => setIsHover2(!isHover2);
   return (
-    <div className="p-8 pt-8 pb-8 flex flex-col gap-8 items-center bg-primary">
+    <div className="p-8 pt-8 pb-8 flex flex-col gap-8 items-center bg-primary" id="pricing">
       <p className="text-secondary font-bold text-lg">Plan De Tarification</p>
       <p className="text-white md:text-[64px] max-md:text-[24px] max-md:text-center font-bold">
         FORFAITS DE SERVICES ET TARIFS

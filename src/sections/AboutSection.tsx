@@ -4,7 +4,7 @@ import { images } from "../constants/images";
 
 const AboutSection = () => {
   return (
-    <div className="bg-primary p-8">
+    <div className="bg-primary p-8" id="about">
       <div className="mt-12 mb-12 w-full h-full flex max-md:flex-col max-md:gap-8">
         <div className="flex flex-col gap-10 w-1/2 max-md:w-full max-md:items-center">
           <p className="text-secondary font-bold text-lg max-md:w-full">
