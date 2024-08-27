@@ -9,6 +9,9 @@ export default {
       colors : {
         primary : '#151f28',
         secondary : '#ffba0a'
+      },
+      maxWidth: {
+        'max-container': '1550px'
       }
     },
   },
