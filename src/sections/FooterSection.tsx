@@ -24,7 +24,7 @@ const FooterSection = () => {
                 </p>
                 <p className="text-white flex gap-2 items-center">
                   <Icon icon="fxemoji:email" />
-                  garageModerneAutomobile@gmail.com
+                  garagemoderneautomobile@gmail.com
                 </p>
               </div>
             </div>
